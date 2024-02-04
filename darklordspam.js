@@ -12,7 +12,7 @@ let IDSChunk = []; // Empty array to store IDs
 
 client.on('ready', async () => {
   console.log(`${client.user.username} is ready!`);
-  IDSChunk = readIDSFromFile("C:\\Users\\kumar\\IdeaProjects\\codes\\output\\output_3.txt"); // Load IDS from the file when the bot is ready
+  IDSChunk = readIDSFromFile("output_3.txt"); // Load IDS from the file when the bot is ready
   console.log("IDS loaded from file:", IDSChunk);
 });
 
