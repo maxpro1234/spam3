@@ -6,13 +6,13 @@ const client = new Client({
   checkUpdate: false,
 });
 const app = express();
-const port = 8100; // Set your desired port number
+const port = 8200; // Set your desired port number
 
 let IDSChunk = []; // Empty array to store IDs
 
 client.on('ready', async () => {
   console.log(`${client.user.username} is ready!`);
-  IDSChunk = readIDSFromFile("C:\\Users\\kumar\\IdeaProjects\\codes\\output\\output_2.txt"); // Load IDS from the file when the bot is ready
+  IDSChunk = readIDSFromFile("C:\\Users\\kumar\\IdeaProjects\\codes\\output\\output_3.txt"); // Load IDS from the file when the bot is ready
   console.log("IDS loaded from file:", IDSChunk);
 });
 
